@@ -1,37 +1,146 @@
-
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-Thin.ttf');
+    font-weight: 100;
+}
 
-.header {
-    padding: 28px 60px;
-    background-color: lightgray;
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-ExtraLight.ttf');
+    font-weight: 200;
 }
 
 
-.header-nav {
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-Black.ttf');
+    font-weight: 900;
+}
+
+/*header*/
+
+.header {
+    padding: 28px 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    font-family: Heebo;
+}
+
+
+
+.header__nav {
     display: flex;
     justify-content: end;
 }
 
-.header-links {
-    color: black;
-    text-decoration: none;
-}
-
-
-.header-list {
-    list-style: none;;
+.header__list {
+    list-style: none;
+    ;
     display: flex;
     gap: 32px;
-   
 }
 
-.header-list li a {
-    font-size: medium;
-    padding: 20px;
-    background-color: aquamarine;
+.header__link {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
 }
+
+.header__link--active {
+    color: #FF6464;
+}
+
+
+.header__list li a {
+    font-size: large;
+    padding: 20px;
+
+}
+/*header*/
+
+/*first*/
+.first__title {
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 120%;
+}
+.first__content{
+    font-weight: 400;
+    font-size: 16px;
+    color: #21243D;
+}
+.first__photo{
+    width: 243;
+    height: 243;
+    border-radius: 50%;
+    box-shadow: -5px 13px 0 #EDF7FA;
+}
+
+.first__container{
+    margin: 0 auto;
+    max-width: 856px;
+}
+.first__description{
+    dis
+}
+/*first*/
+
+
+/*btn*/
+
+.btn {
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #FF6464;
+    color: #FFFFFF;
+    text-decoration: none;
+ 
+}
+
+/*btn*/
