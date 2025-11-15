@@ -1,87 +1,62 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
 @font-face {
     font-family: Heebo;
     src: url('fonts/Heebo-Thin.ttf');
     font-weight: 100;
 }
-
 @font-face {
     font-family: Heebo;
     src: url('fonts/Heebo-ExtraLight.ttf');
     font-weight: 200;
 }
-
-
 @font-face {
     font-family: Heebo;
     src: url('fonts/Heebo-Light.ttf');
     font-weight: 300;
 }
-
 @font-face {
     font-family: Heebo;
     src: url('fonts/Heebo-Regular.ttf');
     font-weight: 400;
 }
-
 @font-face {
     font-family: Heebo;
     src: url('fonts/Heebo-Medium.ttf');
     font-weight: 500;
 }
-
 @font-face {
     font-family: Heebo;
     src: url('fonts/Heebo-SemiBold.ttf');
     font-weight: 600;
 }
-
 @font-face {
     font-family: Heebo;
     src: url('fonts/Heebo-Bold.ttf');
     font-weight: 700;
 }
-
 @font-face {
     font-family: Heebo;
     src: url('fonts/Heebo-ExtraBold.ttf');
     font-weight: 800;
 }
-
 @font-face {
     font-family: Heebo;
     src: url('fonts/Heebo-Black.ttf');
     font-weight: 900;
 }
 
-/*header*/
+body {
+    font-family: Heebo, 'Times New Roman', Times, serif;
+}
+
+/* .header */
 
 .header {
     padding: 28px 60px;
-    background-color: rgb(255, 255, 255);
-}
-
-body {
-    font-family: Heebo;
-}
-
-
-
-.header__nav {
-    display: flex;
-    justify-content: end;
-}
-
-.header__list {
-    list-style: none;
-    ;
-    display: flex;
-    gap: 32px;
 }
 
 .header__link {
@@ -95,52 +70,150 @@ body {
     color: #FF6464;
 }
 
-
-.header__list li a {
-    font-size: large;
-    padding: 20px;
-
+.header__list {
+    list-style: none;
+    display: flex;
+    gap: 32px;
 }
-/*header*/
 
-/*first*/
+.header__nav {
+    display: flex;
+    justify-content: end;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        padding: 14px 30px;
+    }
+
+    .header__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .header__nav {
+        justify-content: center;
+    }
+}
+
+/* .header */
+
+/* .first */
+
+.first {
+    padding-top: 127px;
+    padding-bottom: 68px;
+}
+
+.first__container {
+    width: calc(100% - 60px * 2);
+    max-width: 856px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.first__description {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+    max-width: 500px;
+}
+
 .first__title {
     font-size: 44px;
     font-weight: bold;
     line-height: 120%;
-}
-.first__content{
-    font-weight: 400;
-    font-size: 16px;
     color: #21243D;
 }
-.first__photo{
-    width: 243;
-    height: 243;
+
+.first__text {
+    color: #21243D;
+}
+
+.first__img {
+    width: 243px;
+    height: 243px;
     border-radius: 50%;
     box-shadow: -5px 13px 0 #EDF7FA;
 }
 
-.first__container{
-    margin: 0 auto;
-    max-width: 856px;
+@media screen and (max-width: 840px) {
+    .first {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .first__title {
+        font-size: 36px;
+    }
+
+    .first__img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .first__description {
+        gap: 24px;
+    }
 }
-.first__description{
-    dis
+
+@media screen and (max-width: 720px) {
+    .first {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .first__title {
+        font-size: 28px;
+    }
+
+    .first__img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .first__description {
+        gap: 18px;
+    }
 }
-/*first*/
 
+@media screen and (max-width: 600px) {
+    .first {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
 
-/*btn*/
+    .first__container {
+        width: calc(100% - 30px * 2);
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 
-.btn {
-    border-radius: 2px;
+    .first__description {
+        align-items: center;
+    }
+
+    .first__text, .first__title {
+        text-align: center;
+    }
+}
+
+/* .first */
+
+/* .button */
+
+.button {
     font-weight: 500;
     font-size: 20px;
-    background-color: #FF6464;
-    color: #FFFFFF;
     text-decoration: none;
- 
+    border-radius: 2px;
+    background-color: #FF6464;
+    color: #fff;
+    padding: 9px 20px;
 }
 
-/*btn*/
+/* .button */
